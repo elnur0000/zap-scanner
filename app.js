@@ -5,7 +5,6 @@ const targets = ['https://example.com']
 process.setMaxListeners(Infinity)
 
 const attack = async (target) => {
-  console.log(target)
   const zapScanner = new ZapScanner(target)
 
   process.on('SIGINT', async () => {
